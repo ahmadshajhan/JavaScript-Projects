@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Scientific Calculator
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <style>
+
+        @media only screen and (min-width:300px){
+            *{
+                padding: 0;
+                margin: 0;
+                background-origin: padding-box;
+            }
+
+            body{
+                background: rgba(1, 1, 1, 0.95);
+                font-size: 05rem;
+
+                background-color: #636363;
+            }
+
+            .calculator{
+                position: absolute;
+
+                margin-top: -50%;
+                margin-right: -40%;
+
+
+
+            }
+
+            .calc-container{
+                background-color: #1d1d1d;
+
+                width: 100%;
+                height: auto;
+                border: 1.5rem solid black;
+
+                border-radius: 0 0 10% 10%;
+            }
+
+            .output{
+                width: 100%;
+            background: rgba(0,0,0,0,5);
+            border: 1.5rem solid black;
+            border-radius: 0 0 2em 2em;
+            border-left:none ;
+            border-right: none;
+            border-top: none;
+            }
+
+
+            .operation{
+                width: 100%;
+                height: 1.5rem;
+
+                color: #878787;
+
+                font-size: 1.9rem;
+                font-weight: bold;
+
+                position: relative;
+                overflow: hidden;
+            }
+            .operation .value{
+                position: absolute;
+
+                bottom: 0.1em;
+                right: 0.2em;
+
+                white-space: nowrap;
+                overflow: hidden;
+            color: #2980b9;
+            }
+
+            .result{
+                width: 15em;
+                height: 2.25em;
+
+                color: #fff;
+
+                font-size: 2.6em;
+                font-weight: bold;
+
+                overflow: hidden;
+                position: relative;
+
+            }
+
+            .result .value{
+                position: absolute;
+
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0.2em;
+
+                white-space: nowrap;
+                overflow: hidden;
+
+            }
+
+
+            .input{
+                background: rgba(0,0,0,0,8);
+                border-radius: 0 0 2em 2em;
+                border: 1px solid #1d1d1d;
+                height: 22.5em !important;
+
+
+            }
+
+            .row {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .row button{
+                width: 2.5em;
+                height: 2em;
+
+                font-size: 1.5em;
+
+                border: none;
+                border-radius: 50%;
+                background-color: transparent;
+            border: 0.2em solid rgba(0,0,0,0.9);
+            border-radius: 0.2em;
+
+
+            margin : 0.37em;
+            color:white; 
+                cursor: pointer;
+            }
+            
+            .row button:hover{
+                font-weight: 1000;
+            font-size:1.8em;
+            background:#a5b1c2;
+            border:0.2em solid rgba(0,0,0,0.5);
+            transition:500ms;
+            border-radius:0.5em;
+            }
+            .row button:focus{
+                font-weight: 1000;
+            transition:500ms;
+            font-size:1.8em;
+            background:#a5b1c2;
+            }
+
+            .row #calculate{
+                background: orange;
+                //background-color: #eb2f06;
+            //#46e0bc
+                width : 8em;
+                border-radius: 2em;
+            }
+            
+            .row #calculate:hover{
+                color: #FFF;
+                background-color: #009432;
+            transition:1000ms;
+            //#46e0bc
+                width : 8em;
+                border-radius: 2em;
+            }
+            .row #delete{
+                color: #FFF;
+                background-color: #e05046;
+            }
+            
+            #division, #multiplication, #subtraction, #addition {
+                color: #eb2f06 ;
+            font-size:1.7em;
+            //#18b893
+            }
+            
+            
+            .input button span{
+                font-size: 0.6em;
+                position: absolute;
+            }
+            
+            .active-angle{
+                background-color: #55E6C1 !important;
+                color: black !important;
+                border-radius: 0.5em !important;
+            }
+
+            #one, #two,#four,#five,#six,#seven,#eight,#nine,#zero{
+                color: orange;
+            }
+
+            #sin,#cos,#tan,#acos,#asin,#exp{
+                color: #0097e;
+            }
+
+            #power,#square-root,#square,#exp{
+                color: #7d5fff;
+            }
+
+            #factoril{
+                color: cyan;
+            }
+            
+
+
+
+    </style>
+</html>
